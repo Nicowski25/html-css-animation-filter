@@ -91,16 +91,107 @@
     0% {
         transform: rotate(1turn);
     }
-    
 }
 
-.ex-11-icon {
-    animation: spin2 1s linear infinite;
+.ex-11-icon:hover {
+    animation: spin2 2s linear;
 }
 
 @keyframes spin2 {
     0% {
-
+        transform: rotate(0);
     }
-    
+    80% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: spin3 2s linear;
+}
+
+@keyframes spin3 {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: spin4 2s linear;
+}
+
+@keyframes spin4 {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: spin5 2s linear;
+}
+
+@keyframes spin5 {
+    0% {
+        left: 0%;
+        top: -10px;
+    }
+    25% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    50% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75%{
+        left: 0px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: spin6 2s linear;
+}
+
+@keyframes spin6 {
+    0% {
+        right: 10%;
+        bottom: -10px;
+        
+    }
+    25% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    50% {
+        right: calc(100% - 60px);
+        bottom: 100%;
+    }
+    75% {
+        right: 10px;
+        bottom: 100%;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
 }
